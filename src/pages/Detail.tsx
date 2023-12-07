@@ -41,7 +41,7 @@ const Detail = () => {
         <Typography
           sx={{
             lineHeight: 2,
-            fontSize: { xs: "1.2rem", md: "1.5rem" },
+            fontSize: { xs: "1.3rem", md: "1.5rem" },
             fontWeight: "bold",
             mb: 3,
           }}
@@ -50,7 +50,7 @@ const Detail = () => {
         </Typography>
 
         <Typography
-          sx={{ lineHeight: 2, fontSize: { xs: "0.7rem", md: "1rem" } }}
+          sx={{ lineHeight: 2, fontSize: { xs: "0.9rem", md: "1.2rem" } }}
         >
           {detail.Detail}
         </Typography>

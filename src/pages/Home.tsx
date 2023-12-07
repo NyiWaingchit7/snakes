@@ -22,12 +22,12 @@ const Home = () => {
             >
               <Box
                 sx={{
-                  m: 2,
                   bgcolor: "success.main",
                   "&:hover": { bgcolor: "success.dark" },
-                  p: 3,
+                  p: 1,
                   borderRadius: 5,
                   boxShadow: 3,
+                  m: 1,
                 }}
               >
                 <Box
@@ -55,7 +55,6 @@ const Home = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     flexDirection: "column",
-                    p: 1,
                   }}
                 >
                   <Typography
@@ -64,7 +63,6 @@ const Home = () => {
                     {d.EngName}
                   </Typography>
                   <Typography sx={{ fontSize: "1.25rem", mb: 2 }}>
-                    {" "}
                     {d.MMName}
                   </Typography>
                 </Box>
