@@ -19,7 +19,7 @@ const Detail = () => {
       <Box
         sx={{
           width: { xs: "80%", sm: "50%", md: "40%", lg: "30%" },
-          bgcolor: "success.main",
+          bgcolor: "info.dark",
           borderRadius: 5,
         }}
       >
@@ -32,10 +32,11 @@ const Detail = () => {
       <Box
         sx={{
           width: "90%",
-          bgcolor: "success.main",
+          bgcolor: "info.dark",
           p: 2,
           m: 2,
           borderRadius: 5,
+          color: "success.light",
         }}
       >
         <Typography
@@ -46,7 +47,9 @@ const Detail = () => {
             mb: 3,
           }}
         >
-          {detail.MMName}
+          {detail.MMName}{" "}
+          {detail.IsDanger === "Yes" ? "(အန္တရာယ်ရှိ) " : "(အန္တရာယ်မရှိ) "}
+          {detail.IsPoison === "Yes" ? "(အဆိပ်ရှိ)" : "(အဆိပ်မရှိ)"}
         </Typography>
 
         <Typography

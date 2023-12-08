@@ -22,8 +22,8 @@ const Home = () => {
             >
               <Box
                 sx={{
-                  bgcolor: "success.main",
-                  "&:hover": { bgcolor: "success.dark" },
+                  bgcolor: "info.main",
+                  "&:hover": { bgcolor: "info.dark" },
                   p: 1,
                   borderRadius: 5,
                   boxShadow: 3,
@@ -58,11 +58,18 @@ const Home = () => {
                   }}
                 >
                   <Typography
-                    sx={{ fontSize: "1.1rem", color: "info.dark", mb: 2 }}
+                    sx={{
+                      fontSize: "1.1rem",
+                      color: "primary.dark",
+                      mb: 2,
+                      fontFamily: "cursive",
+                    }}
                   >
                     {d.EngName}
                   </Typography>
-                  <Typography sx={{ fontSize: "1.25rem", mb: 2 }}>
+                  <Typography
+                    sx={{ fontSize: "1.25rem", mb: 2, fontFamily: "cursive" }}
+                  >
                     {d.MMName}
                   </Typography>
                 </Box>
