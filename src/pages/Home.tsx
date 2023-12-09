@@ -22,8 +22,8 @@ const Home = () => {
             >
               <Box
                 sx={{
-                  bgcolor: "info.main",
-                  "&:hover": { bgcolor: "info.dark" },
+                  bgcolor: "info.light",
+                  "&:hover": { bgcolor: "info.main" },
                   p: 1,
                   borderRadius: 5,
                   boxShadow: 3,
