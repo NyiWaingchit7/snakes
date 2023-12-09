@@ -1,10 +1,11 @@
-import { Box, Typography } from "@mui/material";
-import { useParams } from "react-router-dom";
+import { Box, Button, Typography } from "@mui/material";
+import { useNavigate, useParams } from "react-router-dom";
 import { data } from "../util/snakeData";
 
 const Detail = () => {
   const id = useParams().id;
   const detail = data.find((d) => d.Id === Number(id));
+  const navigate = useNavigate();
   if (!detail) return null;
   return (
     <Box
@@ -19,7 +20,7 @@ const Detail = () => {
       <Box
         sx={{
           width: { xs: "80%", sm: "50%", md: "40%", lg: "30%" },
-          bgcolor: "info.dark",
+          bgcolor: "info.main",
           borderRadius: 5,
         }}
       >
@@ -32,13 +33,25 @@ const Detail = () => {
       <Box
         sx={{
           width: "90%",
-          bgcolor: "info.dark",
+          bgcolor: "info.main",
           p: 2,
           m: 2,
           borderRadius: 5,
           color: "success.light",
         }}
       >
+        <Box>
+          <Button
+            variant="contained"
+            sx={{ px: 4, borderRadius: 3, m: 2 }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Back
+          </Button>
+        </Box>
+
         <Typography
           sx={{
             lineHeight: 2,

@@ -50,26 +50,23 @@ const Home = () => {
                 <Box
                   sx={{
                     mt: 3,
-                    color: "primary.dark",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                     flexDirection: "column",
+                    color: "success.light",
                   }}
                 >
                   <Typography
                     sx={{
                       fontSize: "1.1rem",
-                      color: "primary.dark",
+
                       mb: 2,
-                      fontFamily: "cursive",
                     }}
                   >
                     {d.EngName}
                   </Typography>
-                  <Typography
-                    sx={{ fontSize: "1.25rem", mb: 2, fontFamily: "cursive" }}
-                  >
+                  <Typography sx={{ fontSize: "1.25rem", mb: 2 }}>
                     {d.MMName}
                   </Typography>
                 </Box>

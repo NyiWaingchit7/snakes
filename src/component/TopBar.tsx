@@ -4,7 +4,7 @@ const TopBar = () => {
   return (
     <Box
       sx={{
-        bgcolor: "secondary.main",
+        bgcolor: "secondary.dark",
       }}
     >
       <Box
