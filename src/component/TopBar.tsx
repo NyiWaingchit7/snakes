@@ -5,6 +5,8 @@ const TopBar = () => {
     <Box
       sx={{
         bgcolor: "secondary.dark",
+        position: "sticky",
+        top: 0,
       }}
     >
       <Box
